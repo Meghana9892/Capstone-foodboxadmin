@@ -1,0 +1,22 @@
+<div class="tbl">
+    <table class="table table-hover">
+       <thead>
+         <tr>
+           <th scope="col">User Id</th>
+           <th scope="col">Firstname</th>
+           <th scope="col">Lastname</th>
+           <th scope="col">Email</th>
+
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let u of users">
+            <td>{{u.userid}}</td>
+           <td>{{u.firstname}}</td>
+           <td>{{u.lastname}}</td>
+           <td>{{u.email}}</td>
+           </tr>
+           </tbody>
+        </table>
+       </div>
+       <button type="button" class="btn btn-success backbtn" (click)="back()" >Back</button>
